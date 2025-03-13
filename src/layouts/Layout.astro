@@ -1,31 +1,31 @@
-
-
-
-<!doctype html>
-<html lang="en">
-	
-	<head>
-		
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>import MainHead from "./MainHead.astro";
-	<body>
-		<slot />
-	</body>
-</html>
-
+import {
+	(Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu)
+} from "astro-navbar";--
+<header class="lg:flex p-5 gap-5">
+	<Astronav>
+		<div class="flex w-full justify-between">
+			<a>Carlos</a>
+			<div class="block md:hidden">
+				<MenuIcon class="w-4 h-4 text-gray-800" />
+			</div>
+		</div>
+		<MenuItems class="hidden lg:flex">
+			<ul class="flex flex-col lg:flex-row lg:gap
+	5">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</MenuItems>
+	</Astronav>
+</header>
 <style>
-
-	@import"tailwindcss"
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+	li {
+		list-style-type: none;
 	}
-
-	
+	a {
+		text-decoration: none;
+		color: white;
+	}
 </style>

@@ -1,19 +1,20 @@
-import MainHead from "./MainHead.astro";
+---
+const { title, seoTitle, seoDesc } = Astro.props;
+---
 
-const {title, seoTitle, seoDesc} = 
-Astro.props;--
 <!doctype html>
 <html lang="en">
-<MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc}/>
-<body>
-<slot />
-</body>
+    <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
+    <body>
+        <slot />
+    </body>
 </html>
 <style>
-html,
-body {
-margin: 0;
-width: 100%;
-height: 100%;
-}
+    html,
+    body 
+    {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
