@@ -1,10 +1,12 @@
+---
 import {
 	(Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu)
-} from "astro-navbar";--
+} from "astro-navbar";
+---
 <header class="lg:flex p-5 gap-5">
 	<Astronav>
 		<div class="flex w-full justify-between">
-			<a>Carlos</a>
+			<a>Michael</a>
 			<div class="block md:hidden">
 				<MenuIcon class="w-4 h-4 text-gray-800" />
 			</div>
@@ -21,6 +23,7 @@ import {
 	</Astronav>
 </header>
 <style>
+	@installtailwind
 	li {
 		list-style-type: none;
 	}
@@ -29,3 +32,13 @@ import {
 		color: white;
 	}
 </style>
+<footer class="text-center mt-auto py-4">
+	<small
+		>Copyright © <span id="copyright"> </span> | All rights reserved Built with
+		Astro by Carlos Avila</small
+	>
+</footer>
+<script>
+	document.querySelector("#copyright").textC;
+	content = new Date().getFullYear().toString();
+</script>

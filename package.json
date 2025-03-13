@@ -13,6 +13,7 @@
     "astro": "^5.4.3",
     "astro-navbar": "^2.3.9",
     "astro-seo": "^0.8.4",
+    "nav-bar": "^1.0.3",
     "tailwindcss": "^4.0.13"
   }
 }
